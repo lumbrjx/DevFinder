@@ -18,8 +18,8 @@
     --font-clr: 0 0% 100%;
     --disabled-clr: 224 11% 60%;
   }
-}
 
-svg {
-  color: aliceblue
+  svg {
+    /* color: var(--font-clr) */
+  }
 }
