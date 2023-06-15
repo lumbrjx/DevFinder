@@ -9,3 +9,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@layer base {
+  :root {
+    --primary-clr: 222 40% 13%;
+    --secondary-clr: 224 40% 20%;
+    --layout-clr: 211 100% 49%;
+    --font-clr: 0 0% 100%;
+    --disabled-clr: 224 11% 60%;
+  }
+}
