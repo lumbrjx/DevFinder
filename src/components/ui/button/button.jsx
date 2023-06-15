@@ -16,7 +16,7 @@ const CustomButton = ({ style, label }) => {
             : null
         }
       >
-        {label}
+        <div className="tracking-widest">{label}</div>
         {style === "theme-toggle" ? (
           <Sun />
         ) : style === "remove" ? (

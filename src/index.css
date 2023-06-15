@@ -19,7 +19,13 @@
     --disabled-clr: 224 11% 60%;
   }
 
+
+
   svg {
     /* color: var(--font-clr) */
   }
+}
+
+body {
+  background-color: hsl(var(--primary-clr));
 }
