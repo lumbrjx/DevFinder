@@ -11,12 +11,13 @@ export default {
         disabledClr: "hsl(var(--disabled-clr) / <alpha-value>)",
       },
       fontSize: {
-        smallFont: "1rem",
-        largeFont: "2rem",
+        verySmallFont: "1.1rem",
+        smallFont: "1.2rem",
+        largeFont: "1.6rem",
       },
       padding: {
-        generalPad: "0.5rem",
-        subPad: "0.3rem",
+        generalPad: "1.4rem",
+        subPad: "1rem",
       },
       gap: {
         generalGap: "0.5rem",
