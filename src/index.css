@@ -19,3 +19,7 @@
     --disabled-clr: 224 11% 60%;
   }
 }
+
+svg {
+  color: aliceblue
+}
