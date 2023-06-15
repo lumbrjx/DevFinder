@@ -6,9 +6,10 @@ import NavBar from "./components/layout/navbar/navBar";
 
 function App() {
   return (
-    <div className="tracking-widest">
+    <div className="tracking-widest overflow-scroll ">
       <Router>
         <NavBar />
+
         <AppRoutes />
       </Router>
     </div>
