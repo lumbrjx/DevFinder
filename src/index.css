@@ -19,12 +19,20 @@
 }
 
 @layer base {
-  :root {
+  :root[data-theme="dark"] {
     --primary-clr: 222 40% 13%;
     --secondary-clr: 224 40% 20%;
     --layout-clr: 211 100% 49%;
     --font-clr: 0 0% 100%;
     --disabled-clr: 224 11% 60%;
+  }
+
+  :root[data-theme="light"] {
+    --primary-clr: 224 11% 90%;
+    --secondary-clr: 0 0% 100%;
+    --layout-clr: 211 100% 49%;
+    --font-clr: 222 40% 13%;
+    --disabled-clr: 224 40% 20%;
   }
 
 

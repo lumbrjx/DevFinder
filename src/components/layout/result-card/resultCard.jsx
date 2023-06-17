@@ -11,13 +11,13 @@ const ResultCard = () => {
         <div className=" row-span-1 md:col-span-3 md:flex md:flex-row md:justify-between ">
           <div>
             <h2 className="font-bold text-smallFont">the name</h2>
-            <p className="text-layoutClr">tagname</p>
+            <p className="text-layoutClr ">tagname</p>
           </div>
-          <div>
+          <div className="font-medium">
             <p>joined 25 jan 2011</p>
           </div>
         </div>
-        <div className=" col-span-2 md:col-span-3 pt-4">
+        <div className=" col-span-2 font-medium md:col-span-3 pt-4">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
             ipsam a asperiores ad dolorem quasi, veritatis minus laudantium nemo
@@ -27,7 +27,7 @@ const ResultCard = () => {
         </div>
       </div>
       <div className="flex flex-col gap-7 md:items-end">
-        <div className="bg-primaryClr w-full max-w-lg rounded-xl flex justify-between py-generalPad px-10 flex-wrap gap-2 ">
+        <div className="bg-primaryClr font-medium w-full max-w-lg rounded-xl flex justify-between py-generalPad px-10 flex-wrap gap-2 ">
           <div>
             <p>repos</p>
             <p>8</p>
@@ -41,7 +41,7 @@ const ResultCard = () => {
             <p>8</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-2 w-full max-w-lg md:grid-cols-2">
+        <div className="grid grid-cols-1 font-medium gap-2 w-full max-w-lg md:grid-cols-2">
           <div className="">
             <div className="flex gap-2 mb-2">
               <Loc /> <p>sans frnasici</p>

@@ -6,7 +6,7 @@ import NavBar from "./components/layout/navbar/navBar";
 
 function App() {
   return (
-    <div className="tracking-widest ">
+    <div className="tracking-widest pb-10 ">
       <Router>
         <NavBar />
 

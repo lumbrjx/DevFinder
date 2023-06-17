@@ -34,6 +34,9 @@ export default {
       maxWidth: {
         797: "46.313rem",
       },
+      dropShadow: {
+        primaryClr: "hsl(var(--primary-clr) / <alpha-value>)",
+      },
     },
   },
   plugins: [],
