@@ -3,7 +3,7 @@ import SearchInput from "../../components/ui/search-input/searchInput";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-3 pt-28 mx-generalPad">
+    <div className="flex flex-col gap-3 pt-28 mx-generalPad md:items-center">
       <SearchInput />
       <ResultCard />
     </div>

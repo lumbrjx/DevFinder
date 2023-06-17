@@ -2,7 +2,7 @@ import CustomButton from "../button/button";
 import { ReactComponent as Search } from "../../../assets/search.svg";
 const SearchInput = () => {
   return (
-    <div className=" py-1.5 bg-secondaryClr  text-fontClr flex items-center pe-1.5 ps-4 rounded-xl w-full gap-3 ">
+    <div className=" py-1.5 bg-secondaryClr  text-fontClr  flex items-center pe-1.5 ps-4 rounded-xl w-full max-w-797 gap-3 ">
       <div className="flex  items-center gap-4 w-11/12">
         <Search />
         <input

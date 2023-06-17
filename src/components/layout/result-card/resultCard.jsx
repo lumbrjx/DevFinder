@@ -2,13 +2,13 @@ import { ReactComponent as City } from "../../../assets/city.svg";
 import { ReactComponent as Linked } from "../../../assets/link.svg";
 import { ReactComponent as Twitter } from "../../../assets/twitter.svg";
 import { ReactComponent as Loc } from "../../../assets/location.svg";
-
+import "./resultCard.css";
 const ResultCard = () => {
   return (
-    <div className="bg-secondaryClr  rounded-xl p-generalPad text-verySmallFont text-fontClr flex flex-col gap-7">
-      <div className=" customGrid grid gap-2 grid-cols-2  grid-flow-col">
-        <div className="bg-red-200 row-span-2  ">Image</div>
-        <div className="bg-red-200 col-span-1 ">
+    <div className=" w-full max-w-797 bg-secondaryClr  rounded-xl p-generalPad text-verySmallFont text-fontClr flex flex-col gap-7">
+      <div className=" customGrid grid gap-2 md:grid-cols-4  md:grid-flow-col">
+        <div className=" row-span-1  md:row-span-3  ">Image</div>
+        <div className=" row-span-1 md:col-span-3 md:flex md:flex-row md:justify-between ">
           <div>
             <h2 className="font-bold text-smallFont">the name</h2>
             <p className="text-layoutClr">tagname</p>
@@ -17,7 +17,7 @@ const ResultCard = () => {
             <p>joined 25 jan 2011</p>
           </div>
         </div>
-        <div className="bg-red-200 col-span-3">
+        <div className=" col-span-2 md:col-span-3 pt-4">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
             ipsam a asperiores ad dolorem quasi, veritatis minus laudantium nemo
@@ -26,8 +26,8 @@ const ResultCard = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-7">
-        <div className="bg-primaryClr rounded-xl flex justify-between py-generalPad px-10 ">
+      <div className="flex flex-col gap-7 md:items-end">
+        <div className="bg-primaryClr w-full max-w-lg rounded-xl flex justify-between py-generalPad px-10 flex-wrap gap-2 ">
           <div>
             <p>repos</p>
             <p>8</p>
@@ -41,7 +41,7 @@ const ResultCard = () => {
             <p>8</p>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-2">
+        <div className="grid grid-cols-1 gap-2 w-full max-w-lg md:grid-cols-2">
           <div className="">
             <div className="flex gap-2 mb-2">
               <Loc /> <p>sans frnasici</p>

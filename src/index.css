@@ -39,7 +39,7 @@
 }
 
 body {
-  overflow: scroll;
+
   background-color: hsl(var(--primary-clr));
 }
 

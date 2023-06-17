@@ -31,6 +31,9 @@ export default {
         bold: "700",
         normal: "500",
       },
+      maxWidth: {
+        797: "46.313rem",
+      },
     },
   },
   plugins: [],
