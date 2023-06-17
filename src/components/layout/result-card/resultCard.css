@@ -1,0 +1,13 @@
+@media screen and (max-width:768px) {
+    .customGrid {
+        grid-template-rows: 2fr auto auto;
+
+
+    }
+
+    .customGrid:nth-of-type(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}

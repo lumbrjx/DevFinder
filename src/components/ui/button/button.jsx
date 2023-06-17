@@ -1,26 +1,38 @@
 import { ReactComponent as Sun } from "../../../assets/sun.svg";
 import { ReactComponent as Moon } from "../../../assets/moon.svg";
 import { ReactComponent as Remove } from "../../../assets/remove.svg";
+import { ReactComponent as Menu } from "../../../assets/menu.svg";
+import { useState } from "react";
 
-const CustomButton = ({ style, label }) => {
+const CustomButton = ({ style, label, toggle = false, onClick }) => {
+  console.log("im from buttmln " + toggle);
   return (
     <>
       <button
-        className={
+        onClick={onClick}
+        className={`font-normal rounded-lg gap-3 flex   items-center ${
           style === "search"
-            ? "bg-layoutClr px-4 py-2 rounded-md"
-            : style === "theme-toggle"
-            ? " px-4 py-2 rounded-md flex gap-3 font-normal  items-center"
+            ? "bg-layoutClr px-4 py-2 text-fontClr "
+            : style === "theme-toggle "
+            ? " px-4 py-2  "
             : style === "remove"
-            ? "  rounded-md flex gap-3 font-normal items-center"
+            ? "  rounded-md "
+            : style === "menu"
+            ? "md:hidden absolute top-5 right-6"
             : null
-        }
+        }`}
       >
         <div className="tracking-widest">{label}</div>
         {style === "theme-toggle" ? (
           <Sun />
         ) : style === "remove" ? (
           <Remove />
+        ) : style === "menu" ? (
+          toggle === false ? (
+            <Menu />
+          ) : toggle === true ? (
+            <Remove />
+          ) : null
         ) : null}
       </button>
     </>
