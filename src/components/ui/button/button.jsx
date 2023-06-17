@@ -2,10 +2,8 @@ import { ReactComponent as Sun } from "../../../assets/sun.svg";
 import { ReactComponent as Moon } from "../../../assets/moon.svg";
 import { ReactComponent as Remove } from "../../../assets/remove.svg";
 import { ReactComponent as Menu } from "../../../assets/menu.svg";
-import { useState } from "react";
 
-const CustomButton = ({ style, label, toggle = false, onClick }) => {
-  console.log("im from buttmln " + toggle);
+const CustomButton = ({ style, label, toggle = false, onClick, theme }) => {
   return (
     <>
       <button
@@ -24,7 +22,11 @@ const CustomButton = ({ style, label, toggle = false, onClick }) => {
       >
         <div className="tracking-widest">{label}</div>
         {style === "theme-toggle" ? (
-          <Sun />
+          theme === "dark" ? (
+            <Sun />
+          ) : (
+            <Moon />
+          )
         ) : style === "remove" ? (
           <Remove />
         ) : style === "menu" ? (
