@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/home/home";
 import History from "../pages/history/history";
-
 const AppRoutes = () => {
   return (
     <Routes>
@@ -10,5 +9,4 @@ const AppRoutes = () => {
     </Routes>
   );
 };
-
 export default AppRoutes;
