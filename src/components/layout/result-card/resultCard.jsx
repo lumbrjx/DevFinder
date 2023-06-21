@@ -3,10 +3,21 @@ import { ReactComponent as Linked } from "../../../assets/link.svg";
 import { ReactComponent as Twitter } from "../../../assets/twitter.svg";
 import { ReactComponent as Loc } from "../../../assets/location.svg";
 import "./resultCard.css";
+import { motion } from "framer-motion";
+import { useResultAnimation } from "../../../hooks/animation/components/resultAnimation";
 // rendering data and handeling the styles of missing ones
 const ResultCard = ({ data }) => {
+  const { ResultAnimation } = useResultAnimation();
+
   return (
-    <div className="w-full max-w-797 bg-secondaryClr rounded-xl p-generalPad text-verySmallFont text-fontClr flex flex-col gap-7">
+    <motion.div
+      variants={ResultAnimation}
+      initial={ResultAnimation.initial}
+      animate={ResultAnimation.inInitial}
+      transition={{ duration: 0.3 }}
+      exit={ResultAnimation.exit}
+      className="w-full max-w-797 bg-secondaryClr rounded-xl p-generalPad text-verySmallFont text-fontClr flex flex-col gap-7"
+    >
       <div className="customGrid grid gap-2 md:grid-cols-4 md:grid-flow-col">
         <div className="row-span-1 md:row-span-3 ">
           <img
@@ -58,7 +69,7 @@ const ResultCard = ({ data }) => {
               className={`flex gap-2  ${data.blog ? "" : "text-disabledClr"} `}
             >
               <Linked className={data.blog ? "" : "fill-disabledClr"} />{" "}
-              <p>{data.blog ? data.blog : "Not available"}</p>
+              <a href={data.blog}>{data.blog ? data.blog : "Not available"}</a>
             </div>
           </div>
           <div>
@@ -87,7 +98,7 @@ const ResultCard = ({ data }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

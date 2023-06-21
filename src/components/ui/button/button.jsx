@@ -2,7 +2,6 @@ import { ReactComponent as Sun } from "../../../assets/sun.svg";
 import { ReactComponent as Moon } from "../../../assets/moon.svg";
 import { ReactComponent as Remove } from "../../../assets/remove.svg";
 import { ReactComponent as Menu } from "../../../assets/menu.svg";
-
 const CustomButton = ({ style, label, toggle = false, onClick, theme }) => {
   return (
     <>
