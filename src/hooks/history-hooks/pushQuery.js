@@ -2,7 +2,8 @@
 export const usePush = () => {
   const PushData = (query) => {
     const id = crypto.randomUUID();
-    localStorage.setItem(id.toString(), query);
+    const queryObject = { id: id, query: query };
+    localStorage.setItem("id-" + id.toString(), JSON.stringify(queryObject));
   };
   return { PushData };
 };

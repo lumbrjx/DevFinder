@@ -1,6 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import CustomButton from "./components/ui/button/button";
 import AppRoutes from "./routes/appRoutes";
 import NavBar from "./components/layout/navbar/navBar";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -12,7 +11,6 @@ function App() {
       <Router>
         <QueryClientProvider client={queryClient}>
           <NavBar />
-
           <AppRoutes />
         </QueryClientProvider>
       </Router>

@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @tailwind base;
-
-/* Firefox */
-
-
-
-
-/* Chrome, Edge, and Safari */
-
 @tailwind components;
 @tailwind utilities;
 
@@ -35,8 +27,6 @@
     --disabled-clr: 224 40% 20%;
   }
 
-
-
   svg {
     color: hsl(var(--font-clr))
   }
@@ -47,6 +37,5 @@
 }
 
 body {
-
   background-color: hsl(var(--primary-clr));
 }

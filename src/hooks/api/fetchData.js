@@ -9,7 +9,6 @@ export const useFetchData = (user = "") => {
     }
     return null;
   }
-
   const { data, isLoading, isError, isIdle } = useQuery(
     ["users", user],
     queryUser
