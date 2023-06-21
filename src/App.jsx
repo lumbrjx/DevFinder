@@ -3,14 +3,18 @@ import "./App.css";
 import CustomButton from "./components/ui/button/button";
 import AppRoutes from "./routes/appRoutes";
 import NavBar from "./components/layout/navbar/navBar";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 function App() {
+  const queryClient = new QueryClient();
   return (
     <div className="tracking-widest pb-10 ">
       <Router>
-        <NavBar />
+        <QueryClientProvider client={queryClient}>
+          <NavBar />
 
-        <AppRoutes />
+          <AppRoutes />
+        </QueryClientProvider>
       </Router>
     </div>
   );
